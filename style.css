@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Container styling */
+.container {
+  margin-bottom: 15px;
+  width: 100vw;
+}
+/* Carousel styling */
+.carousel {
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Carousel navigation button styling (right) */
+  .carousel-button1 {
+    position: absolute;
+    z-index: 10;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    margin-top: 15%;
+    transform: translateY(-50%);
+    color: rgba(224, 220, 220, 0.5);
+    cursor: pointer;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    right: 1rem;
+  }
+  
+  /* Hover and focus effects for the right carousel button */
+.carousel-button1:hover,
+.carousel-button1:focus {
+  color: rgb(116, 30, 30);
+}
+
+.carousel-button1:focus {
+  outline: 1px solid black;
+}
+
+/* Carousel navigation button styling (left) */
+.carousel-button2 {
+  position: absolute;
+  z-index: 10;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-top: 15%;
+  transform: translateY(-50%);
+  color: rgba(224, 220, 220, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  left: 1rem;
+}
+
+/* Hover and focus effects for the left carousel button */
+.carousel-button2:hover,
+.carousel-button2:focus {
+  color: rgb(116, 30, 30);
+}
+
+.carousel-button2:focus {
+  outline: 1px solid black;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    border-bottom: 1.5px solid black;
+    background: white;
+  }
+  
+  /* Logo styling */
+  .logo  img {
+    display: flex;
+    width: 200px;
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  /* Navigation styling */
+  nav {
+    margin: 10px;
+    padding: 16px;
+  }
+  nav ul li {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    margin: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: ease-out;
+  }
+  
+  /* Navigation item hover effect */
+  nav ul li:hover {
+    color: rgb(145, 141, 141);
+  }
+
+  /* Icons container styling */
+.icons {
+    margin: 10px;
+    padding: 32px;
+    cursor: pointer;
+    transition: ease-out;
+  }
+  
+  /* Icon hover effect */
+  .icons i:hover {
+    color: rgb(145, 141, 141);
+  }
+  
+  /* Icon styling */
+  .icons i {
+    display: inline;
+    font-size: 20px;
+    margin: 8px;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  /* Main content styling */
+main {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    color: white;
+    margin-left: 15%;
+    text-align: center;
+    text-transform: uppercase;
+    /* margin-top: -25px; */
+  }
+  
+  /* Main headline styling */
+  main  h4 {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  /* Subheadline styling */
+  main  h2 {
+    font-size: 47px;
+    font-weight: bolder;
+    margin-top: 20px;
+  }
+
+  /* Link button styling */
+.link {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    padding: 15px;
+    border-radius: 2px;
+    margin-top: -5px;
+    background-color: #f9f9f9;
+    border: 1px solid rgb(218, 216, 216);
+    cursor: pointer;
+    margin-top: 50px;
+  }
+  
+  /* Link text styling */
+  .link  a {
+    font-size: 14px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+  }
+
+  /* Link hover effect */
+.link a:hover {
+    color: rgb(145, 141, 141);
+    transition: ease-out;
+  }
+  
+  /* Content section styling */
+  .content {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url(./Decibullz-Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+  /* Subscribe section styling */
+.subscribe {
+    position: absolute;
+    width: 295px;
+    height: 300px;
+    bottom: 15px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Subscribe section headline styling */
+  .subscribe h2 {
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: lighter;
+    text-transform: uppercase;
+  }
+
+  /* Subscribe form styling */
+.subscribe form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Subscribe input field styling */
+  .subscribe input {
+    padding: 10px;
+    left: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    height: 10px;
+    margin-top: 10px;
+  }
+  
+  /* General form styling */
+form {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 290px;
+    height: 140px;
+    margin-left: 10px;
+  }
+  
+  /* Subscribe button styling */
+  .subscribe button {
+    padding: 8px;
+    background-color: #2d2929;
+    color: #fff;
+    border: none;
+    margin-left: 32%;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 105px;
+    justify-content: center;
+    margin-bottom: 10px;
+    height: 30px;
+  }
+
+  /* Subscribe button hover effect */
+.subscribe button:hover {
+    background-color: #333;
+  }
+  
+  /* Aside section styling */
+  .aside {
+    position: relative;
+    margin-top: 50px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1)
+      ),
+      url(./subscribe-image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 310px;
+    height: 98px;
+    margin-left: 10px;
+    border-radius: 3.5px;
+}
+
+/* Placeholder image styling */
+.aside > img {
+  margin: 10;
+}
+
+/* Label styling */
+label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 3px;
+  margin-top: 10px;
+}
+  
+  
+  
+  
+  
+  
+  
+    
+  
